@@ -1,0 +1,33 @@
+{
+  "domain": "medisana_bt_scale",
+  "name": "Medisana BT Scale",
+  "codeowners": ["@yourusername"],
+  "config_flow": true,
+  "dependencies": ["bluetooth"],
+  "documentation": "https://github.com/yourusername/medisana_bt_scale",
+  "iot_class": "local_push",
+  "requirements": ["bleak-retry-connector>=3.4.0"],
+  "version": "1.1.0",
+  "bluetooth": [
+    {
+      "service_uuid": "000078b2-0000-1000-8000-00805f9b34fb",
+      "connectable": true
+    },
+    {
+      "manufacturer_id": 220,
+      "connectable": true
+    },
+    {
+      "local_name": "013197*",
+      "connectable": true
+    },
+    {
+      "local_name": "013198*",
+      "connectable": true
+    },
+    {
+      "local_name": "0202B6*",
+      "connectable": true
+    }
+  ]
+}

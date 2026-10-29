@@ -1,0 +1,51 @@
+{
+  "config": {
+    "step": {
+      "bluetooth_confirm": {
+        "description": "Do you want to set up {name}?"
+      },
+      "user": {
+        "data": {
+          "address": "Device"
+        },
+        "description": "Select your Medisana Bluetooth scale"
+      },
+      "slot_mapping": {
+        "title": "Link scale users to Home Assistant persons",
+        "description": "The scale supports up to 8 users. Map each slot to a Home Assistant person if you'd like its sensors named after them - leave a slot as \"Not assigned\" to keep it generic. You can redo this later from this integration's \"Configure\" option.\n\nDetected so far:\n{hints}",
+        "data": {
+          "slot_1": "Slot 1",
+          "slot_2": "Slot 2",
+          "slot_3": "Slot 3",
+          "slot_4": "Slot 4",
+          "slot_5": "Slot 5",
+          "slot_6": "Slot 6",
+          "slot_7": "Slot 7",
+          "slot_8": "Slot 8"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Device is already configured",
+      "no_devices_found": "No Medisana Bluetooth scales found"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Link scale users to Home Assistant persons",
+        "description": "Update which Home Assistant person each scale slot belongs to. Reload happens automatically once you save.\n\nDetected so far:\n{hints}",
+        "data": {
+          "slot_1": "Slot 1",
+          "slot_2": "Slot 2",
+          "slot_3": "Slot 3",
+          "slot_4": "Slot 4",
+          "slot_5": "Slot 5",
+          "slot_6": "Slot 6",
+          "slot_7": "Slot 7",
+          "slot_8": "Slot 8"
+        }
+      }
+    }
+  }
+}
